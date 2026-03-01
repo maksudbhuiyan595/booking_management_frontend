@@ -59,7 +59,7 @@ export default function HeroCarousel({
             <CarouselItem key={i} className="lg:basis-1/2 !ml-4">
               <Card className="!p-0 overflow-hidden rounded-none border-0">
                 <CardContent
-                  className="flex h-[80dvh] items-center justify-center bg-zinc-800 bg-blend-luminosity !p-0 overflow-hidden bg-center bg-no-repeat bg-cover"
+                  className="flex h-[80dvh] items-center justify-center bg-zinc-800  !p-0 overflow-hidden bg-center bg-no-repeat bg-cover"
                   style={{ backgroundImage: `url('${slide.image}')` }}
                 >
                   <div className="h-full w-full flex flex-col justify-end items-start space-y-6! p-6! font-serif">

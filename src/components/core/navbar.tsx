@@ -71,13 +71,14 @@ export default function ResponsiveNavbar() {
           {/* Left: Logo */}
           <div className="flex-shrink-0">
             <Link href="/">
-              <Image
+              {/* <Image
                 src="/logo.png"
                 height={80}
                 width={120}
                 className="w-[60px] md:w-[80px] lg:w-[100px]"
                 alt="Pool Valet Logo"
-              />
+              /> */}
+              Booking Management System
             </Link>
           </div>
 

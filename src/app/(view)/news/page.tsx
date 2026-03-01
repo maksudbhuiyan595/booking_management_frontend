@@ -3,6 +3,9 @@ import { Input } from "@/components/ui/input";
 import React from "react";
 import BlogList from "./blog-list";
 
+// বিল্ডের সময় এরর স্কিপ করতে এটি যোগ করুন
+export const dynamic = "force-dynamic";
+
 export default function Page() {
   return (
     <>
@@ -18,13 +21,13 @@ export default function Page() {
             <h3 className="text-sm lg:text-lg">
               Don’t miss out on what’s happening near you — get there with us.
             </h3>
-            {/* <div className="w-full flex justify-center items-center">
+            <div className="w-full flex justify-center items-center">
               <Input
                 className="rounded-r-none!"
                 placeholder="Search events or locations...."
               />
               <Button className="rounded-r-lg">Search</Button>
-            </div> */}
+            </div>
           </div>
         </div>
       </header>
@@ -34,6 +37,7 @@ export default function Page() {
           <div className="h-1 w-[40%] absolute -bottom-1 bg-primary" />
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* এখানে আসল সমস্যা হচ্ছে */}
           <BlogList />
         </div>
       </main>

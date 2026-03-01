@@ -3,6 +3,9 @@ import AllAllies from "./all-allies";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 
+// এটি বিল্ড এরর এড়াতে সাহায্য করবে
+export const dynamic = "force-dynamic";
+
 export default async function Page() {
   return (
     <>
@@ -11,7 +14,7 @@ export default async function Page() {
         style={{ backgroundImage: `url('/image/about.jpg')` }}
       >
         <div className="h-full w-full flex justify-center items-center backdrop-blur-xs backdrop-brightness-50">
-          <div className="lg:w-1/2 flex flex-col justify-around items-center gap-6 text-center">
+          <div className="lg:w-1/2 flex flex-col justify-around items-center gap-6 text-center text-white">
             <h1 className="text-xl lg:text-3xl font-semibold">
               Meet Our Allies
             </h1>
@@ -26,23 +29,29 @@ export default async function Page() {
         </div>
       </header>
       <main className="my-12! px-4! lg:px-[7%]! font-serif">
-        <h2 className=" text-center text-4xl">Our core team member</h2>
+        <h2 className=" text-center text-4xl font-bold mb-12">Our Partner Venues</h2>
 
-        <div className="my-12! grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="my-12!">
           <Suspense
-            fallback={Array.from({ length: 8 }).map((_, i) => (
-              <Skeleton key={`skeleton-${i}`} className="w-full aspect-video" />
-            ))}
+            fallback={
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {Array.from({ length: 8 }).map((_, i) => (
+                  <Skeleton key={`skeleton-${i}`} className="w-full aspect-video rounded-xl" />
+                ))}
+              </div>
+            }
           >
+            {/* মেইন ডাটা ফেচিং এই কম্পোনেন্টের ভেতরে হচ্ছে */}
             <AllAllies />
           </Suspense>
         </div>
-        <div className="">
-          <h2 className="text-center mt-12! text-lg md:text-2xl lg:text-4xl">
+        
+        <div className="bg-secondary/20 p-8 lg:p-16 rounded-3xl mt-24!">
+          <h2 className="text-center text-lg md:text-2xl lg:text-4xl font-semibold max-w-2xl mx-auto">
             Are you a local venue? Become our ally and grow with us.
           </h2>
-          <div className="py-12! flex justify-center items-center">
-            <Button className="text-foreground rounded" size="lg">
+          <div className="mt-8 flex justify-center items-center">
+            <Button className="text-foreground rounded-full px-8 py-6 font-bold" size="lg">
               Apply to join
             </Button>
           </div>
