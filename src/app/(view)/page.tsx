@@ -10,13 +10,13 @@ export default function Home() {
       id: 1,
       image: "/image/ev1.png",
       alt: "Happy New Year",
-      date: 'December 31, 2025 · 11:59 PM',
+      date: 'December 31, 2026 · 11:59 PM',
     },
     {
       id: 2,
       image: "/image/ev2.png",
       alt: "Victory Day",
-      date: 'December 16, 2025 · 6:00 AM',
+      date: 'December 16, 2026 · 6:00 AM',
 
     },
 
@@ -24,7 +24,7 @@ export default function Home() {
       id: 3,
       image: "/image/eve3.jpeg",
       alt: "Uthso Shondha",
-      date: 'January 1, 2025 · 10:00 AM',
+      date: 'January 1, 2026 · 10:00 AM',
 
     },
     {
@@ -32,7 +32,7 @@ export default function Home() {
       image: "/image/ev1.png",
       alt: "Happy New Year",
 
-      date: 'December 31, 2025 · 11:59 PM',
+      date: 'December 31, 2026 · 11:59 PM',
     },
 
 
@@ -40,14 +40,14 @@ export default function Home() {
       id: 5,
       image: "/image/ev2.png",
       alt: "Victory Day",
-      date: 'December 16, 2025 · 6:00 AM',
+      date: 'December 16, 2026 · 6:00 AM',
 
     },
     {
       id: 6,
       image: "/image/eve3.jpeg",
       alt: "Uthso Shondha",
-      date: 'January 1, 2025 · 10:00 AM',
+      date: 'June 1, 2026 · 10:00 AM',
 
     },
   ];
