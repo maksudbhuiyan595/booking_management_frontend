@@ -65,7 +65,7 @@ export default function HeroCarousel({
                   <div className="h-full w-full flex flex-col justify-end items-start space-y-6! p-6! font-serif">
                     <h3 className="text-xl lg:text-3xl">Way To</h3>
                     <h2 className="text-3xl lg:text-5xl">{slide.alt}</h2>
-                    <h3 className="text-xl lg:text-3xl">Dhaka,Bangladesh</h3>
+                    <h3 className="text-xl lg:text-3xl">Dhaka,Bangladesh </h3>
                     <p className="text-base text-primary">
                       {/* January 21, 2025 · 7:30 AM */}
                       {slide.date}
